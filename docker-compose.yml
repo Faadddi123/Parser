@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+      - temp_data:/tmp/xml_translator_uploads
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=production
+
+volumes:
+  temp_data: 

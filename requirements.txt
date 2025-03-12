@@ -1,0 +1,5 @@
+requests==2.31.0
+tqdm==4.66.1
+google-cloud-translate==3.11.1
+Flask==2.3.3
+Werkzeug==2.3.7 
